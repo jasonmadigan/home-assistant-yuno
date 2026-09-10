@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased fork changes
+
+- Supply mean type and unit class for energy and cost statistics on newer Home Assistant versions, removing the recorder deprecations scheduled to break in 2026.11.
+- Preserve Home Assistant 2024.12 support by selecting metadata fields supported by the installed recorder.
+- Test the actual recorder validation boundary for both series, including repeated imports.
+
+- Add email/password setup using the verified Android login format, with no proxy capture.
+- Save encrypted app credentials and session tokens without retaining the plain password.
+- Renew expired sessions once and persist replacements across polls and restarts.
+- Add reauthentication and migration from manual setup while preserving config entry IDs.
+- Keep existing captured-token and replay-login configurations supported.
+- Add a standard-library setup helper for the original integration, with optional single login.
+- Add offline encryption, HTTP serialization, config-flow and session lifecycle tests.
+
 ## 0.1.6
 
 - Group Yuno sensor entities under a Home Assistant device for the config entry.
